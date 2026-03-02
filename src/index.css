@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #135bec;
+  --color-off-white: #F8FAFC;
+  --color-navy-deep: #0F172A;
+  --color-electric-blue: #2D6BF1;
+  --color-accent-blue: #E0E7FF;
+  --font-sans: "Noto Sans Thai", "Inter", sans-serif;
+  --font-display: "Inter", "Noto Sans Thai", sans-serif;
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+    background-color: var(--color-off-white);
+    color: #0f172a;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.news-gradient {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0) 0%, rgba(15, 23, 42, 0.9) 100%);
+}
+.active-tab {
+  background-color: var(--color-primary);
+  color: white;
+  box-shadow: 0 4px 6px -1px rgba(19, 91, 236, 0.2), 0 2px 4px -1px rgba(19, 91, 236, 0.1);
+}
+.inactive-tab {
+  background-color: white;
+  color: #64748b;
+  border: 1px solid #f1f5f9;
+}
